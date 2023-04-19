@@ -7,27 +7,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-BilmesiGerekenKutuphanele
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-OzelDers", "1-OzelDers", "{DD3C6CC4-EF43-4B62-A11A-2B25BE528369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.API", "Net5.API\Net5.API.csproj", "{CAC66846-1847-496A-9033-4C2C401793FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net5.API", "Net5.API\Net5.API.csproj", "{CAC66846-1847-496A-9033-4C2C401793FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net3.API", "Net3.API\Net3.API.csproj", "{81FA2D7B-3CE0-46F5-B0AF-985597F898F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net3.API", "Net3.API\Net3.API.csproj", "{81FA2D7B-3CE0-46F5-B0AF-985597F898F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net6.API", "Net6.API\Net6.API.csproj", "{3FF6F148-73B8-47AD-8059-857D7F1B7649}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net6.API", "Net6.API\Net6.API.csproj", "{3FF6F148-73B8-47AD-8059-857D7F1B7649}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-SOLIDPRENSIPLERI", "1-SOLIDPRENSIPLERI", "{F00F6DD5-07D3-4B24-9BA8-D186365283B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.SingleResponsibility", "Solid.SingleResponsibility\Solid.SingleResponsibility.csproj", "{DCF8418B-5131-436D-A092-727E03CA6F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.SingleResponsibility", "Solid.SingleResponsibility\Solid.SingleResponsibility.csproj", "{DCF8418B-5131-436D-A092-727E03CA6F20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.OpenClosed", "Solid.OpenClosed\Solid.OpenClosed.csproj", "{B1D132CC-B94E-41BE-852E-4C8800715A8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.OpenClosed", "Solid.OpenClosed\Solid.OpenClosed.csproj", "{B1D132CC-B94E-41BE-852E-4C8800715A8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.LiskovSubstitution", "Solid.LiskovSubstitution\Solid.LiskovSubstitution.csproj", "{974BEBED-8170-4E9D-A54C-9A1E6CBD11ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.LiskovSubstitution", "Solid.LiskovSubstitution\Solid.LiskovSubstitution.csproj", "{974BEBED-8170-4E9D-A54C-9A1E6CBD11ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.InterfaceSegregation", "Solid.InterfaceSegregation\Solid.InterfaceSegregation.csproj", "{9FEF4B83-DADF-42ED-AC4E-26F001871844}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.InterfaceSegregation", "Solid.InterfaceSegregation\Solid.InterfaceSegregation.csproj", "{9FEF4B83-DADF-42ED-AC4E-26F001871844}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.DependencyInversion", "Solid.DependencyInversion\Solid.DependencyInversion.csproj", "{F327F3C3-744A-46EA-8A62-40DAC4301556}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.DependencyInversion", "Solid.DependencyInversion\Solid.DependencyInversion.csproj", "{F327F3C3-744A-46EA-8A62-40DAC4301556}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-FLUENTVALIDATION", "2-FLUENTVALIDATION", "{9ED585B2-3E6F-48FD-B2E7-A055E1114AC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationApp.WebUI", "FluentValidationApp.WebUI\FluentValidationApp.WebUI.csproj", "{47C7D564-F086-4162-A9E0-3F9E2D31B8C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidationApp.WebUI", "FluentValidationApp.WebUI\FluentValidationApp.WebUI.csproj", "{47C7D564-F086-4162-A9E0-3F9E2D31B8C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
