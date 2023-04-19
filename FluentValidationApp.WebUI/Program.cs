@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //builder.Services.AddControllersWithViews().
+
 //Fluent iþlemlerinin gerçekleþmesi için eklenecek kod bloðu aþaððýda oluþturulmuþtue
 builder.Services.AddControllersWithViews().AddFluentValidation(options =>
 {
@@ -16,7 +17,9 @@ builder.Services.AddControllersWithViews().AddFluentValidation(options =>
     options.RegisterValidatorsFromAssemblyContaining<Program>();
 
 });
-////1.Yöntem
+
+
+////1.Yöntem Veritabanýna bðlank için kullanýlýyor
 builder.Services.AddDbContext<AppDatabaseContext>();
 
 
