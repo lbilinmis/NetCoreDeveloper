@@ -32,6 +32,32 @@
                 <input type="date" asp-for="BirthDay" class="form-control" />
                 <span asp-validation-for="BirthDay" class="text-danger"></span>
             </div>
+
+            <hr />
+            <h3>Adres Alanı</h3>
+            @for(int i = 0; i < 2; i++)
+            {
+                <div class="form-group">
+                    <label asp-for="Addresses[i].Content" class="control-label"></label>
+                    <input asp-for="Addresses[i].Content" class="form-control" />
+                    <span asp-validation-for="Addresses[i].Content" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="Addresses[i].Provience" class="control-label"></label>
+                    <input asp-for="Addresses[i].Provience" class="form-control" />
+                    <span asp-validation-for="Addresses[i].Provience" class="text-danger"></span>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label asp-for="Addresses[i].PstCode" class="control-label"></label>
+                    <input asp-for="Addresses[i].PstCode" class="form-control" />
+                    <span asp-validation-for="Addresses[i].PstCode" class="text-danger"></span>
+                </div>
+            }
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -43,7 +69,6 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@*@section Scripts {
+@section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-*@

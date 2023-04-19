@@ -18,6 +18,7 @@ namespace FluentValidationApp.WebUI.Models.Context
 
         //}
         public DbSet<Customer> Customers { get; set; }
+        public IList<Address> Addresses { get; set; }
 
     }
 

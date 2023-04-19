@@ -24,6 +24,7 @@ namespace FluentValidationApp.WebUI.FluentValidations
 
                 }).WithMessage("Yaşınız 18'den büyük olmalıdır.");
 
+            RuleForEach(x => x.Addresses).SetValidator(new AddressValidator());
         }
     }
 }
