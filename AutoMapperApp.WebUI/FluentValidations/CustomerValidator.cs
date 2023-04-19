@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
-using FluentValidationApp.WebAPI.Models;
+using AutoMapperApp.WebUI.Models;
 
-namespace FluentValidationApp.WebAPI.FluentValidations
+namespace AutoMapperApp.WebUI.FluentValidations
 {
     public class CustomerValidator : AbstractValidator<Customer>
     {
@@ -25,9 +25,6 @@ namespace FluentValidationApp.WebAPI.FluentValidations
                 }).WithMessage("Yaşınız 18'den büyük olmalıdır.");
 
             RuleForEach(x => x.Addresses).SetValidator(new AddressValidator());
-
-            RuleFor(x => x.En_Gender).IsInEnum().WithMessage("Bayan 1 , Bay 2 değerini almalıdır");
-
         }
     }
 }

@@ -1,7 +1,6 @@
-﻿using FluentValidationApp.WebAPI.Enums;
-using System.Net;
+﻿using AutoMapperApp.WebUI.Enums;
 
-namespace FluentValidationApp.WebAPI.Models
+namespace AutoMapperApp.WebUI.Models
 {
     public class Customer
     {

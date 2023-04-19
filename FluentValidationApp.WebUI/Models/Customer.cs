@@ -1,4 +1,6 @@
-﻿namespace FluentValidationApp.WebUI.Models
+﻿using FluentValidationApp.WebUI.Enums;
+
+namespace FluentValidationApp.WebUI.Models
 {
     public class Customer
     {
@@ -9,5 +11,6 @@
 
         public DateTime? BirthDay { get; set; }
         public IList<Address> Addresses { get; set; }
+        public EN_Gender En_Gender { get; set; }
     }
 }
