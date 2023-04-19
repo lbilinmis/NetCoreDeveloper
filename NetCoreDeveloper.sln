@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-FLUENTVALIDATION", "2-FLU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidationApp.WebUI", "FluentValidationApp.WebUI\FluentValidationApp.WebUI.csproj", "{47C7D564-F086-4162-A9E0-3F9E2D31B8C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationApp.WebAPI", "FluentValidationApp.WebAPI\FluentValidationApp.WebAPI.csproj", "{053E02C3-0A3A-41BE-95E6-8EA00019ACE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{47C7D564-F086-4162-A9E0-3F9E2D31B8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47C7D564-F086-4162-A9E0-3F9E2D31B8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47C7D564-F086-4162-A9E0-3F9E2D31B8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053E02C3-0A3A-41BE-95E6-8EA00019ACE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053E02C3-0A3A-41BE-95E6-8EA00019ACE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053E02C3-0A3A-41BE-95E6-8EA00019ACE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053E02C3-0A3A-41BE-95E6-8EA00019ACE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{F327F3C3-744A-46EA-8A62-40DAC4301556} = {F00F6DD5-07D3-4B24-9BA8-D186365283B8}
 		{9ED585B2-3E6F-48FD-B2E7-A055E1114AC9} = {84AFF419-7AE5-4DE7-819D-3E04E36D62AF}
 		{47C7D564-F086-4162-A9E0-3F9E2D31B8C3} = {9ED585B2-3E6F-48FD-B2E7-A055E1114AC9}
+		{053E02C3-0A3A-41BE-95E6-8EA00019ACE9} = {9ED585B2-3E6F-48FD-B2E7-A055E1114AC9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F58CBC98-7E23-4882-A7C1-3FB16D7EB4B1}
