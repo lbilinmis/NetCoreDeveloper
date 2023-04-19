@@ -22,7 +22,9 @@ namespace AutoMapperApp.WebUI.Mappings
             CreateMap<Customer, CustomerDiferentPropertyDto>()
                 .ForMember(dest => dest.Ad, opt => opt.MapFrom(x => x.Name))
                 .ForMember(dest => dest.Eposta, opt => opt.MapFrom(x => x.Email))
-                .ForMember(dest => dest.Yas, opt => opt.MapFrom(x => x.Age));
+                .ForMember(dest => dest.Yas, opt => opt.MapFrom(x => x.Age))
+                .ForMember(dest => dest.CustomerEmailAndAge, opt => opt.MapFrom(x => x.CustomerEmailAndAgeNotSameProperty()));
+
 
 
         }

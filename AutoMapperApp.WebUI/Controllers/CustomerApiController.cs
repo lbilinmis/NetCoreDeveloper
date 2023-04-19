@@ -43,6 +43,14 @@ namespace AutoMapperApp.WebUI.Controllers
         //    return _mapper.Map<List<CustomerDto>>(customers);
         //}
 
+        [HttpGet]
+        [Route("MappingGet")]
+        public IActionResult MappingGet()
+        {
+            Customer customer = new Customer { Id = 2, Email = "deneme@gmail.com", Age = 38, Name = "deneme isim" };
+            return Ok(_mapper.Map<CustomerDiferentPropertyDto>(customer));
+        }
+
 
         [HttpGet]
         public async Task<ActionResult<IList<CustomerDiferentPropertyDto>>> GetCustomers()
@@ -61,10 +69,10 @@ namespace AutoMapperApp.WebUI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Customer>> GetCustomer(int id)
         {
-          if (_context.Customers == null)
-          {
-              return NotFound();
-          }
+            if (_context.Customers == null)
+            {
+                return NotFound();
+            }
             var customer = await _context.Customers.FindAsync(id);
 
             if (customer == null)
@@ -111,10 +119,10 @@ namespace AutoMapperApp.WebUI.Controllers
         [HttpPost]
         public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
-          if (_context.Customers == null)
-          {
-              return Problem("Entity set 'AppDatabaseContext.Customers'  is null.");
-          }
+            if (_context.Customers == null)
+            {
+                return Problem("Entity set 'AppDatabaseContext.Customers'  is null.");
+            }
             _context.Customers.Add(customer);
             await _context.SaveChangesAsync();
 
