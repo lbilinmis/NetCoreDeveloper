@@ -22,21 +22,12 @@ builder.Services.AddControllersWithViews().AddFluentValidation(options =>
 ////1.Yöntem Veritabanýna bðlank için kullanýlýyor
 builder.Services.AddDbContext<AppDatabaseContext>();
 
-
-//ya da Fluent iþlemi için 1 tane için yapýlabilir ama çok sayýda varsa üstteki kodu yazmak daha effective
-//builder.Services.AddSingleton<IValidator<Customer>, CustomerValidator>();
-
 builder.Services.AddAutoMapper(typeof(Program)); // burada dto larý tara map iþlemini yap demekteyiz
                                                  // ardýndan hangi class neye dönüþcekse
                                                  // ayrý bir kaslör oluþturup mapping iþlemini orada yapmalý
 
 var app = builder.Build();
 
-////2.Yöntem
-//builder.Services.AddDbContext<AppDatabaseContext>(options =>
-//{
-//    options.UseSqlServer(app.Configuration["FluentConnectionStrings"]);
-//});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

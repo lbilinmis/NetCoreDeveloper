@@ -30,17 +30,31 @@ namespace AutoMapperApp.WebUI.Controllers
         }
 
         // GET: api/CustomerApi
+        //[HttpGet]
+        //public async Task<ActionResult<IList<CustomerDto>>> GetCustomers()
+        //{
+        //    //burada dönüştürme işlemii automapper ile yaptık
+        //  if (_context.Customers == null)
+        //  {
+        //      return NotFound();
+        //  }
+
+        //  List<Customer> customers= await _context.Customers.ToListAsync();
+        //    return _mapper.Map<List<CustomerDto>>(customers);
+        //}
+
+
         [HttpGet]
-        public async Task<ActionResult<IList<CustomerDto>>> GetCustomers()
+        public async Task<ActionResult<IList<CustomerDiferentPropertyDto>>> GetCustomers()
         {
             //burada dönüştürme işlemii automapper ile yaptık
-          if (_context.Customers == null)
-          {
-              return NotFound();
-          }
+            if (_context.Customers == null)
+            {
+                return NotFound();
+            }
 
-          List<Customer> customers= await _context.Customers.ToListAsync();
-            return _mapper.Map<List<CustomerDto>>(customers);
+            List<Customer> customers = await _context.Customers.ToListAsync();
+            return _mapper.Map<List<CustomerDiferentPropertyDto>>(customers);
         }
 
         // GET: api/CustomerApi/5
