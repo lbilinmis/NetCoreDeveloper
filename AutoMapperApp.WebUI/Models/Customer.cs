@@ -13,6 +13,8 @@ namespace AutoMapperApp.WebUI.Models
         public IList<Address> Addresses { get; set; }
         public EN_Gender En_Gender { get; set; }
 
+        public CreditCard CreditCard { get; set; }
+
         public string GetCustomerInfo() {
 
             return $"Adı : {Name} EMail : {Email} Yaşı :{Age}";

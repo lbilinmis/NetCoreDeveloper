@@ -19,4 +19,19 @@
         public string CustomerInfo { get; set; }
         public string CustomerEmailAndAge { get; set; }
     }
+
+
+    public class CustomerFlatenning
+    {
+        public int Id { get; set; }
+        public string Ad { get; set; }
+        public string Eposta { get; set; }
+        public int Yas { get; set; }
+
+        public string CustomerInfo { get; set; }
+        public string CustomerEmailAndAge { get; set; }
+
+        public string CreditCardNumber { get; set; }
+        public string CreditCardValidTime { get; set; }
+    }
 }

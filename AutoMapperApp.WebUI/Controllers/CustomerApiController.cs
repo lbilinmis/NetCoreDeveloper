@@ -51,6 +51,24 @@ namespace AutoMapperApp.WebUI.Controllers
             return Ok(_mapper.Map<CustomerDiferentPropertyDto>(customer));
         }
 
+        [HttpGet]
+        [Route("MappingGetFlatenning")]
+        public IActionResult MappingGetFlatenning()
+        {
+            Customer customer = new Customer
+            {
+                Id = 2,
+                Email = "deneme@gmail.com",
+                Age = 38,
+                Name = "deneme isim",
+                CreditCard = new CreditCard
+                {
+                    Number = "21",
+                    ValidTime = DateTime.Now
+                }
+            };
+            return Ok(_mapper.Map<CustomerFlatenning>(customer));
+        }
 
         [HttpGet]
         public async Task<ActionResult<IList<CustomerDiferentPropertyDto>>> GetCustomers()
