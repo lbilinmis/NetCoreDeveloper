@@ -46,6 +46,7 @@ builder.Services.Configure<IpRateLimitOptions>(options =>
     //options.IpWhitelist = new List<string> { "127.0.0.1", "::1" };
     options.IpWhitelist = new List<string> { "127.0.0.1" };
     options.RealIpHeader = "X-Real-IP"; // load balancer iþlemi için kullanýlýr
+    options.EndpointWhitelist= new List<string>(){ "put:/api/product" };
     options.GeneralRules = new List<RateLimitRule>
         {
             new RateLimitRule
