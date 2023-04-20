@@ -17,6 +17,27 @@ builder.Services.AddMemoryCache();
 
 builder.Services.AddInMemoryRateLimiting();
 
+builder.Services.Configure<IpRateLimitPolicies>(options =>
+{
+    options.IpRules = new List<IpRateLimitPolicy>
+    {
+        new IpRateLimitPolicy
+        {
+            Ip = "127.0.0.1",
+            Rules = new List<RateLimitRule>
+            {
+                new RateLimitRule
+                {
+                     //Endpoint = "*", // Tüm endpoint ler için 
+                Endpoint = "*",
+                Period = "10s", // süre sn dk saat gun þeklinde
+                Limit = 10
+                }
+            }
+        }
+    };
+});
+
 builder.Services.Configure<IpRateLimitOptions>(options =>
 {
     options.EnableEndpointRateLimiting = true;
@@ -24,7 +45,7 @@ builder.Services.Configure<IpRateLimitOptions>(options =>
     options.HttpStatusCode = 429;
     //options.IpWhitelist = new List<string> { "127.0.0.1", "::1" };
     options.IpWhitelist = new List<string> { "127.0.0.1" };
-    options.RealIpHeader = "X-Real-IP";
+    options.RealIpHeader = "X-Real-IP"; // load balancer iþlemi için kullanýlýr
     options.GeneralRules = new List<RateLimitRule>
         {
             new RateLimitRule
@@ -47,16 +68,14 @@ builder.Services.Configure<IpRateLimitOptions>(options =>
                 //Endpoint = "*", // Tüm endpoint ler için 
                 Endpoint = "*:/api/categories",
 
-                Period = "1d", // bir gün
-                Limit = 500
+                Period = "10s", // bir gün
+                Limit = 5
             }
 
         };
 });
 
-builder.Services.Configure<IpRateLimitPolicies>(options =>
-{
-});
+
 
 builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
 builder.Services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
@@ -70,6 +89,8 @@ builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>()
 
 var app = builder.Build();
 app.UseIpRateLimiting(); // ekleme iþlemi yapldý
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
