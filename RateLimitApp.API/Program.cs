@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 //RateLimit için gerekli sevisler
 builder.Services.AddOptions();
+
 builder.Services.AddMemoryCache();
 
 builder.Services.AddInMemoryRateLimiting();
@@ -28,10 +29,28 @@ builder.Services.Configure<IpRateLimitOptions>(options =>
         {
             new RateLimitRule
             {
-                Endpoint = "*",
-                Period = "10s",
+                //Endpoint = "*", // Tüm endpoint ler için 
+                Endpoint = "*:/api/product",
+                Period = "10s", // süre sn dk saat gun þeklinde
                 Limit = 2
+            },
+             new RateLimitRule
+            {
+                //Endpoint = "*", // Tüm endpoint ler için 
+                Endpoint = "*:/api/product",
+
+                Period = "1h", // bir saat
+                Limit = 5
+            },
+             new RateLimitRule
+            {
+                //Endpoint = "*", // Tüm endpoint ler için 
+                Endpoint = "*:/api/categories",
+
+                Period = "1d", // bir gün
+                Limit = 500
             }
+
         };
 });
 
