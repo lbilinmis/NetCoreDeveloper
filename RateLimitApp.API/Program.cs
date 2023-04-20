@@ -50,19 +50,18 @@ builder.Services.Configure<IpRateLimitOptions>(options =>
     
     options.GeneralRules = new List<RateLimitRule>
         {
-            new RateLimitRule
+           new RateLimitRule
             {
                 //Endpoint = "*", // Tüm endpoint ler için 
                 Endpoint = "*:/api/product",
-                Period = "10s", // süre sn dk saat gun þeklinde
+                Period = "20s", // süre sn dk saat gun þeklinde
                 Limit = 2
             },
              new RateLimitRule
             {
                 //Endpoint = "*", // Tüm endpoint ler için 
-                Endpoint = "*:/api/product",
-
-                Period = "1h", // bir saat
+                Endpoint = "*:/api/product/*",
+                Period = "30s", // bir saat
                 Limit = 5
             },
              new RateLimitRule

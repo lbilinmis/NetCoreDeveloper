@@ -7,10 +7,16 @@ namespace RateLimitApp.API.Controllers
     public class ProductController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetPrpduct()
+        public IActionResult GetProduct()
         {
 
             return Ok(new { Id = 1, Name = "Kalem", Price = 10 });
+        }
+
+        [HttpGet("{name}")]
+        public IActionResult GetProduct(string name)
+        {//parametre alan bir metod nasıl yapılacağı örneği
+            return Ok(name);
         }
 
 
