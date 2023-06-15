@@ -1,5 +1,4 @@
 ﻿using FluentValidationApp.WebAPI.Enums;
-using System.Net;
 
 namespace FluentValidationApp.WebAPI.Models
 {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Solid.LiskovSubstitution.Good
+﻿namespace Solid.LiskovSubstitution.Good
 {
     public abstract class BasePhone
     {

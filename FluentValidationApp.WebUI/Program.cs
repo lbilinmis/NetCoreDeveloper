@@ -1,9 +1,5 @@
-using FluentValidation;
 using FluentValidation.AspNetCore;
-using FluentValidationApp.WebUI.FluentValidations;
-using FluentValidationApp.WebUI.Models;
 using FluentValidationApp.WebUI.Models.Context;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,9 +1,5 @@
-using FluentValidation;
-using FluentValidation.AspNetCore;
-using AutoMapperApp.WebUI.FluentValidations;
-using AutoMapperApp.WebUI.Models;
 using AutoMapperApp.WebUI.Models.Context;
-using Microsoft.EntityFrameworkCore;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -22,7 +22,7 @@ namespace AutoMapperApp.WebUI.Controllers
         [HttpPost]
         public IActionResult Index(EventDateDto eventDateDto)
         {
-            EventDate eventDate=_mapper.Map<EventDate>(eventDateDto);
+            EventDate eventDate = _mapper.Map<EventDate>(eventDateDto);
 
             ViewBag.EventDate = eventDate;
             return View();

@@ -24,7 +24,7 @@ namespace RateLimitApp.API.Controllers
         public IActionResult SaveProduct()
         {
 
-            return Ok(new { status="success" });
+            return Ok(new { status = "success" });
         }
 
 

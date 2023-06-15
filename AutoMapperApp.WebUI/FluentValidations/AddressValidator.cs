@@ -1,5 +1,5 @@
-﻿using FluentValidation;
-using AutoMapperApp.WebUI.Models;
+﻿using AutoMapperApp.WebUI.Models;
+using FluentValidation;
 
 namespace AutoMapperApp.WebUI.FluentValidations
 {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Solid.DependencyInversion.Good
+﻿namespace Solid.DependencyInversion.Good
 {
     public class ProductService
     {
@@ -29,7 +23,7 @@ namespace Solid.DependencyInversion.Good
         }
     }
 
-    public class ProductRepoFromOracle: IRepository
+    public class ProductRepoFromOracle : IRepository
     {
         public List<string> GetAll()
         {

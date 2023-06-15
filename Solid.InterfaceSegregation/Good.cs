@@ -1,11 +1,4 @@
-﻿using Solid.InterfaceSegregation.Bad;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Solid.InterfaceSegregation.Good
+﻿namespace Solid.InterfaceSegregation.Good
 {
     public class T
     {

@@ -4,7 +4,7 @@ using AutoMapperApp.WebUI.Models;
 
 namespace AutoMapperApp.WebUI.Mappings
 {
-    public class EventDateProfile:Profile
+    public class EventDateProfile : Profile
     {
         public EventDateProfile()
         {

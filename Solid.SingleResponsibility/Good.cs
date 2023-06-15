@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Solid.SingleResponsibility.Good
+﻿namespace Solid.SingleResponsibility.Good
 {
     public class NewProduct
     {
         public int Id { get; set; }
         public string Name { get; set; }
-       
+
     }
 
     public class ProductMethods
-    {    
+    {
         public void WriteTConsole(List<NewProduct> products)
         {
             products.ForEach(x =>
@@ -39,7 +33,7 @@ namespace Solid.SingleResponsibility.Good
                 new NewProduct {Id=4,Name="Kalem 4"},
             };
 
-        }      
+        }
 
         public void SaveOrUpdate(NewProduct NewProduct)
         {
@@ -69,7 +63,7 @@ namespace Solid.SingleResponsibility.Good
 
         }
 
-        public List<NewProduct>  GetAllList()
+        public List<NewProduct> GetAllList()
         {
             return ProductRepository.NewProductList;
         }

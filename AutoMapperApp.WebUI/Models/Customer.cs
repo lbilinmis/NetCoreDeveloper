@@ -15,7 +15,8 @@ namespace AutoMapperApp.WebUI.Models
 
         public CreditCard CreditCard { get; set; }
 
-        public string GetCustomerInfo() {
+        public string GetCustomerInfo()
+        {
 
             return $"Adı : {Name} EMail : {Email} Yaşı :{Age}";
         }

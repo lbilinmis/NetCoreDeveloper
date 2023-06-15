@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using AutoMapperApp.WebUI.Dtos;
 using AutoMapperApp.WebUI.Models;
 using AutoMapperApp.WebUI.Models.Context;
 using FluentValidation;
-using AutoMapper;
-using AutoMapperApp.WebUI.Dtos;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AutoMapperApp.WebUI.Controllers
 {
